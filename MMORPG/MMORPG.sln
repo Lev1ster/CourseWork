@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMORPG", "MMORPG\MMORPG.csproj", "{A8CA20C5-271F-4341-8458-0F2E778FC9C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{3DA80016-375D-40EA-BF3E-1395F1BB64F9}"
+	ProjectSection(SolutionItems) = preProject
+		Assets\background.jpg = Assets\background.jpg
+		Assets\icon.jpg = Assets\icon.jpg
+		Assets\LogIn.jpg = Assets\LogIn.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fonts", "Fonts", "{EFDF630E-8CAE-4FA3-A73A-D2B1EB033FCA}"
+	ProjectSection(SolutionItems) = preProject
+		Assets\Fonts\nosquare.otf = Assets\Fonts\nosquare.otf
+		Assets\Fonts\square.ttf = Assets\Fonts\square.ttf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Button", "Button", "{A110093E-31CA-4D83-BC80-63576685D692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controler", "Controllers\Controler.csproj", "{09470A4A-456A-4EF1-92C2-A28CF345E621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{90B52394-5F46-4959-A4AD-2A6DDEECFB73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8CA20C5-271F-4341-8458-0F2E778FC9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CA20C5-271F-4341-8458-0F2E778FC9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CA20C5-271F-4341-8458-0F2E778FC9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CA20C5-271F-4341-8458-0F2E778FC9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09470A4A-456A-4EF1-92C2-A28CF345E621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09470A4A-456A-4EF1-92C2-A28CF345E621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09470A4A-456A-4EF1-92C2-A28CF345E621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09470A4A-456A-4EF1-92C2-A28CF345E621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B52394-5F46-4959-A4AD-2A6DDEECFB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B52394-5F46-4959-A4AD-2A6DDEECFB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B52394-5F46-4959-A4AD-2A6DDEECFB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B52394-5F46-4959-A4AD-2A6DDEECFB73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EFDF630E-8CAE-4FA3-A73A-D2B1EB033FCA} = {3DA80016-375D-40EA-BF3E-1395F1BB64F9}
+		{A110093E-31CA-4D83-BC80-63576685D692} = {3DA80016-375D-40EA-BF3E-1395F1BB64F9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF76C63C-1C6C-459F-A20E-5D2A34163CB5}
+	EndGlobalSection
+EndGlobal
