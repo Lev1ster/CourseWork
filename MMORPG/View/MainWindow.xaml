@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="WorldOfBD" Height="625" Width="546" Background="{x:Null}" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="./image/icon.jpg" HorizontalAlignment="Center">
+        Title="WorldOfBD" Height="624" Width="546" ResizeMode="NoResize" WindowStartupLocation="Manual" Icon="./image/icon.jpg" HorizontalAlignment="Center" WindowStyle="None" VerticalAlignment="Center" Margin="0" Left="0" Loaded="WindowApp_Loaded" Top="0">
+    <Window.Background>
+        <ImageBrush ImageSource="./background.jpg"/>
+    </Window.Background>
 
     <Grid x:Name="MainGrid">
         <Grid x:Name="signInGrid" HorizontalAlignment="Center" Height="625" VerticalAlignment="Center" Width="546">
@@ -23,35 +26,21 @@
                 </Button.Background>
             </Button>
             <Button x:Name="signUpButton" Content="SignUp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="143" Margin="-1,576,0,0" Height="50" FontFamily="Segoe Script" FontSize="30" BorderBrush="{x:Null}" Foreground="White" Style="{DynamicResource otherLoginButtons}" Background="#FF32313F" Padding="0"/>
-            <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="404,576,0,-1" Height="50" FontFamily="Segoe Script" FontSize="30" BorderBrush="{x:Null}" Foreground="White" Style="{DynamicResource otherLoginButtons}" Background="#FF32313F"/>
+            <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="404,576,0,-1" Height="50" FontFamily="Segoe Script" FontSize="30" BorderBrush="{x:Null}" Foreground="White" Style="{DynamicResource otherLoginButtons}" Background="#FF32313F" Click="exitButton_Click"/>
             <Grid.Triggers>
                 <EventTrigger SourceName="signInButton" RoutedEvent="Button.Click">
                     <EventTrigger.Actions>
                         <BeginStoryboard>
-                            <Storyboard TargetProperty="Width" TargetName="WindowApp">
-                                <DoubleAnimation To="952"
-                                         AutoReverse="false"
-                                         Duration="0:0:3"
-                                         Completed="DoubleAnimation_Completed"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                        <BeginStoryboard>
                             <Storyboard TargetProperty="Height" TargetName="WindowApp">
-                                <DoubleAnimation To="535"
+                                <DoubleAnimation To="675"
                                          AutoReverse="false"
                                          Duration="0:0:3"/>
                             </Storyboard>
                         </BeginStoryboard>
+
                         <BeginStoryboard>
-                            <Storyboard TargetProperty="Width" TargetName="MainWindowGrid">
-                                <DoubleAnimation From="0" To="952"
-                                         AutoReverse="false"
-                                         Duration="0:0:3"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                        <BeginStoryboard>
-                            <Storyboard TargetProperty="Height" TargetName="MainWindowGrid">
-                                <DoubleAnimation From="0" To="535"
+                            <Storyboard TargetProperty="Width" TargetName="WindowApp">
+                                <DoubleAnimation To="1200"
                                          AutoReverse="false"
                                          Duration="0:0:3"
                                          Completed="DoubleAnimation_Completed"/>
@@ -61,8 +50,6 @@
                 </EventTrigger>
             </Grid.Triggers>
         </Grid>
-        <Grid x:Name="MainWindowGrid" HorizontalAlignment="Center" Height="0" VerticalAlignment="Center" Width="0" Background="Black" Margin="71,132,87,185" Visibility="Hidden">
-            <Button x:Name="button1" Content="Button" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Width="75" Visibility="Hidden"/>
-        </Grid>
+        <Grid x:Name="MainWindowGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="71,132,87,185" Visibility="Hidden"/>
     </Grid>
 </Window>
