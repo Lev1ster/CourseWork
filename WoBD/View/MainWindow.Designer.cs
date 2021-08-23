@@ -51,8 +51,24 @@ namespace View
             this.regRegButton = new System.Windows.Forms.Button();
             this.backRegButton = new System.Windows.Forms.Button();
             this.exitRegButton = new System.Windows.Forms.Button();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.nickMainText = new System.Windows.Forms.Label();
+            this.classMainLabel = new System.Windows.Forms.Label();
+            this.classMainText = new System.Windows.Forms.Label();
+            this.raceMainText = new System.Windows.Forms.Label();
+            this.raceMainLabel = new System.Windows.Forms.Label();
+            this.lvlMainText = new System.Windows.Forms.Label();
+            this.lvlMainLabel = new System.Windows.Forms.Label();
+            this.settingMainButton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.invMainLabel = new System.Windows.Forms.Label();
+            this.talantsMainButton = new System.Windows.Forms.Button();
+            this.specMainButton = new System.Windows.Forms.Button();
+            this.bestiaryMainButton = new System.Windows.Forms.Button();
             this.loginPanel.SuspendLayout();
             this.regPanel.SuspendLayout();
+            this.mainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // loginPanel
@@ -74,6 +90,7 @@ namespace View
             // 
             // regPanel
             // 
+            this.regPanel.Controls.Add(this.mainPanel);
             this.regPanel.Controls.Add(this.exitRegButton);
             this.regPanel.Controls.Add(this.backRegButton);
             this.regPanel.Controls.Add(this.regRegButton);
@@ -319,6 +336,177 @@ namespace View
             this.exitRegButton.UseVisualStyleBackColor = false;
             this.exitRegButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // mainPanel
+            // 
+            this.mainPanel.Controls.Add(this.bestiaryMainButton);
+            this.mainPanel.Controls.Add(this.specMainButton);
+            this.mainPanel.Controls.Add(this.talantsMainButton);
+            this.mainPanel.Controls.Add(this.invMainLabel);
+            this.mainPanel.Controls.Add(this.dataGridView1);
+            this.mainPanel.Controls.Add(this.settingMainButton);
+            this.mainPanel.Controls.Add(this.lvlMainText);
+            this.mainPanel.Controls.Add(this.lvlMainLabel);
+            this.mainPanel.Controls.Add(this.raceMainText);
+            this.mainPanel.Controls.Add(this.raceMainLabel);
+            this.mainPanel.Controls.Add(this.classMainText);
+            this.mainPanel.Controls.Add(this.classMainLabel);
+            this.mainPanel.Controls.Add(this.nickMainText);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(1082, 571);
+            this.mainPanel.TabIndex = 17;
+            // 
+            // nickMainText
+            // 
+            this.nickMainText.AutoSize = true;
+            this.nickMainText.Font = new System.Drawing.Font("Segoe Script", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nickMainText.ForeColor = System.Drawing.SystemColors.Control;
+            this.nickMainText.Location = new System.Drawing.Point(718, 9);
+            this.nickMainText.Name = "nickMainText";
+            this.nickMainText.Size = new System.Drawing.Size(210, 57);
+            this.nickMainText.TabIndex = 0;
+            this.nickMainText.Text = "NickName";
+            // 
+            // classMainLabel
+            // 
+            this.classMainLabel.AutoSize = true;
+            this.classMainLabel.Font = new System.Drawing.Font("Segoe Script", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.classMainLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.classMainLabel.Location = new System.Drawing.Point(731, 58);
+            this.classMainLabel.Name = "classMainLabel";
+            this.classMainLabel.Size = new System.Drawing.Size(122, 54);
+            this.classMainLabel.TabIndex = 1;
+            this.classMainLabel.Text = "Class:";
+            // 
+            // classMainText
+            // 
+            this.classMainText.AutoSize = true;
+            this.classMainText.Font = new System.Drawing.Font("Segoe Script", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.classMainText.ForeColor = System.Drawing.SystemColors.Control;
+            this.classMainText.Location = new System.Drawing.Point(901, 56);
+            this.classMainText.Name = "classMainText";
+            this.classMainText.Size = new System.Drawing.Size(122, 54);
+            this.classMainText.TabIndex = 2;
+            this.classMainText.Text = "Class:";
+            // 
+            // raceMainText
+            // 
+            this.raceMainText.AutoSize = true;
+            this.raceMainText.Font = new System.Drawing.Font("Segoe Script", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.raceMainText.ForeColor = System.Drawing.SystemColors.Control;
+            this.raceMainText.Location = new System.Drawing.Point(902, 110);
+            this.raceMainText.Name = "raceMainText";
+            this.raceMainText.Size = new System.Drawing.Size(119, 54);
+            this.raceMainText.TabIndex = 4;
+            this.raceMainText.Text = "Race:";
+            // 
+            // raceMainLabel
+            // 
+            this.raceMainLabel.AutoSize = true;
+            this.raceMainLabel.Font = new System.Drawing.Font("Segoe Script", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.raceMainLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.raceMainLabel.Location = new System.Drawing.Point(735, 112);
+            this.raceMainLabel.Name = "raceMainLabel";
+            this.raceMainLabel.Size = new System.Drawing.Size(119, 54);
+            this.raceMainLabel.TabIndex = 3;
+            this.raceMainLabel.Text = "Race:";
+            // 
+            // lvlMainText
+            // 
+            this.lvlMainText.AutoSize = true;
+            this.lvlMainText.Font = new System.Drawing.Font("Segoe Script", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lvlMainText.ForeColor = System.Drawing.SystemColors.Control;
+            this.lvlMainText.Location = new System.Drawing.Point(901, 164);
+            this.lvlMainText.Name = "lvlMainText";
+            this.lvlMainText.Size = new System.Drawing.Size(119, 54);
+            this.lvlMainText.TabIndex = 6;
+            this.lvlMainText.Text = "Level";
+            // 
+            // lvlMainLabel
+            // 
+            this.lvlMainLabel.AutoSize = true;
+            this.lvlMainLabel.Font = new System.Drawing.Font("Segoe Script", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lvlMainLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.lvlMainLabel.Location = new System.Drawing.Point(719, 161);
+            this.lvlMainLabel.Name = "lvlMainLabel";
+            this.lvlMainLabel.Size = new System.Drawing.Size(134, 54);
+            this.lvlMainLabel.TabIndex = 5;
+            this.lvlMainLabel.Text = "Level:";
+            // 
+            // settingMainButton
+            // 
+            this.settingMainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.settingMainButton.Font = new System.Drawing.Font("Segoe Print", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.settingMainButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.settingMainButton.Location = new System.Drawing.Point(111, 10);
+            this.settingMainButton.Name = "settingMainButton";
+            this.settingMainButton.Size = new System.Drawing.Size(212, 54);
+            this.settingMainButton.TabIndex = 7;
+            this.settingMainButton.Text = "Setting";
+            this.settingMainButton.UseVisualStyleBackColor = false;
+            this.settingMainButton.Click += new System.EventHandler(this.settingMainButton_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 194);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(404, 359);
+            this.dataGridView1.TabIndex = 8;
+            // 
+            // invMainLabel
+            // 
+            this.invMainLabel.AutoSize = true;
+            this.invMainLabel.Font = new System.Drawing.Font("Segoe Script", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.invMainLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.invMainLabel.Location = new System.Drawing.Point(113, 137);
+            this.invMainLabel.Name = "invMainLabel";
+            this.invMainLabel.Size = new System.Drawing.Size(201, 57);
+            this.invMainLabel.TabIndex = 9;
+            this.invMainLabel.Text = "Inventory";
+            // 
+            // talantsMainButton
+            // 
+            this.talantsMainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.talantsMainButton.Font = new System.Drawing.Font("Segoe Print", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.talantsMainButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.talantsMainButton.Location = new System.Drawing.Point(716, 251);
+            this.talantsMainButton.Name = "talantsMainButton";
+            this.talantsMainButton.Size = new System.Drawing.Size(319, 54);
+            this.talantsMainButton.TabIndex = 10;
+            this.talantsMainButton.Text = "Talants";
+            this.talantsMainButton.UseVisualStyleBackColor = false;
+            this.talantsMainButton.Click += new System.EventHandler(this.talantsMainButton_Click);
+            // 
+            // specMainButton
+            // 
+            this.specMainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.specMainButton.Font = new System.Drawing.Font("Segoe Print", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.specMainButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.specMainButton.Location = new System.Drawing.Point(716, 355);
+            this.specMainButton.Name = "specMainButton";
+            this.specMainButton.Size = new System.Drawing.Size(319, 54);
+            this.specMainButton.TabIndex = 11;
+            this.specMainButton.Text = "Specification";
+            this.specMainButton.UseVisualStyleBackColor = false;
+            this.specMainButton.Click += new System.EventHandler(this.specMainButton_Click);
+            // 
+            // bestiaryMainButton
+            // 
+            this.bestiaryMainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.bestiaryMainButton.Font = new System.Drawing.Font("Segoe Print", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bestiaryMainButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.bestiaryMainButton.Location = new System.Drawing.Point(716, 461);
+            this.bestiaryMainButton.Name = "bestiaryMainButton";
+            this.bestiaryMainButton.Size = new System.Drawing.Size(319, 54);
+            this.bestiaryMainButton.TabIndex = 12;
+            this.bestiaryMainButton.Text = "Bestiary";
+            this.bestiaryMainButton.UseVisualStyleBackColor = false;
+            this.bestiaryMainButton.Click += new System.EventHandler(this.bestiaryMainButton_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -334,6 +522,9 @@ namespace View
             this.loginPanel.PerformLayout();
             this.regPanel.ResumeLayout(false);
             this.regPanel.PerformLayout();
+            this.mainPanel.ResumeLayout(false);
+            this.mainPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -362,6 +553,20 @@ namespace View
         private System.Windows.Forms.Button exitRegButton;
         private System.Windows.Forms.Button backRegButton;
         private System.Windows.Forms.Button regRegButton;
+        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Button bestiaryMainButton;
+        private System.Windows.Forms.Button specMainButton;
+        private System.Windows.Forms.Button talantsMainButton;
+        private System.Windows.Forms.Label invMainLabel;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button settingMainButton;
+        private System.Windows.Forms.Label lvlMainText;
+        private System.Windows.Forms.Label lvlMainLabel;
+        private System.Windows.Forms.Label raceMainText;
+        private System.Windows.Forms.Label raceMainLabel;
+        private System.Windows.Forms.Label classMainText;
+        private System.Windows.Forms.Label classMainLabel;
+        private System.Windows.Forms.Label nickMainText;
     }
 }
 

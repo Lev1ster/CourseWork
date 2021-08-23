@@ -41,5 +41,25 @@ namespace View
         {
 
         }
+
+        private void settingMainButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void talantsMainButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void specMainButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bestiaryMainButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
